@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HBF-ND-CIe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="74p-nN-QrY">
+            <objects>
+                <viewController id="HBF-ND-CIe" customClass="ViewController" customModule="Mogul" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kVC-zB-7im"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Wb-YW-67A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eDs-YL-wvZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silliconValleyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-nE-PIU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nne-Oo-eco">
+                                <rect key="frame" x="0.0" y="212" width="600" height="360"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bjd-8U-b6a">
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="360"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-e7-0rT" customClass="ItemView" customModule="Mogul" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="120"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEz-pj-6d9" customClass="ItemView" customModule="Mogul" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="301" height="120"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwF-da-dko" customClass="ItemView" customModule="Mogul" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="301" height="120"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vnk-zx-iEJ">
+                                        <rect key="frame" x="300" y="0.0" width="301" height="360"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSf-Gb-dXf" customClass="ItemView" customModule="Mogul" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="120"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gF4-zC-be5" customClass="ItemView" customModule="Mogul" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="301" height="120"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-he-Jem" customClass="ItemView" customModule="Mogul" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="301" height="120"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voD-Qh-JkH">
+                                <rect key="frame" x="180" y="90" width="240" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="voD-Qh-JkH" secondAttribute="height" multiplier="165:110" id="Mch-1K-fkK"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="intern"/>
+                                <connections>
+                                    <action selector="internButtonPressed:" destination="HBF-ND-CIe" eventType="touchUpInside" id="tZ5-HC-oaE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhH-Pj-EHT">
+                                <rect key="frame" x="219" y="25" width="162.5" height="55.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Million" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us3-2m-IYt">
+                                <rect key="frame" x="387" y="52" width="66" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-s2-QYc">
+                                <rect key="frame" x="194" y="31" width="20" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Here to Start Earning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mn-Ya-ViP">
+                                <rect key="frame" x="192" y="223" width="216" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nne-Oo-eco" firstAttribute="width" secondItem="eDs-YL-wvZ" secondAttribute="width" id="1uK-Uu-KUY"/>
+                            <constraint firstItem="voD-Qh-JkH" firstAttribute="centerX" secondItem="eDs-YL-wvZ" secondAttribute="centerX" id="2Hh-Cu-Sc7"/>
+                            <constraint firstItem="Rmi-nE-PIU" firstAttribute="height" secondItem="eDs-YL-wvZ" secondAttribute="height" id="ATm-5f-0eO"/>
+                            <constraint firstItem="voD-Qh-JkH" firstAttribute="top" secondItem="eDs-YL-wvZ" secondAttribute="centerY" multiplier="0.3" id="BbV-JB-WEL"/>
+                            <constraint firstItem="bdx-s2-QYc" firstAttribute="trailing" secondItem="AhH-Pj-EHT" secondAttribute="leading" constant="-5" id="CIB-oV-Au8"/>
+                            <constraint firstItem="Rmi-nE-PIU" firstAttribute="width" secondItem="eDs-YL-wvZ" secondAttribute="width" id="Cuj-hm-hb6"/>
+                            <constraint firstItem="AhH-Pj-EHT" firstAttribute="centerX" secondItem="Rmi-nE-PIU" secondAttribute="centerX" id="Goq-tj-S1l"/>
+                            <constraint firstItem="6Mn-Ya-ViP" firstAttribute="bottom" secondItem="voD-Qh-JkH" secondAttribute="bottom" multiplier="0.97" id="MPb-AJ-mWL"/>
+                            <constraint firstAttribute="bottom" secondItem="Nne-Oo-eco" secondAttribute="bottom" multiplier="1.05" id="PLN-9H-Cka"/>
+                            <constraint firstItem="Nne-Oo-eco" firstAttribute="centerX" secondItem="eDs-YL-wvZ" secondAttribute="centerX" id="SGs-z4-cFk"/>
+                            <constraint firstItem="Nne-Oo-eco" firstAttribute="height" secondItem="eDs-YL-wvZ" secondAttribute="height" multiplier="0.6" id="YgX-GL-PJy"/>
+                            <constraint firstItem="Us3-2m-IYt" firstAttribute="leading" secondItem="AhH-Pj-EHT" secondAttribute="trailing" constant="5" id="aIy-vW-tAg"/>
+                            <constraint firstItem="Us3-2m-IYt" firstAttribute="bottom" secondItem="AhH-Pj-EHT" secondAttribute="bottom" constant="-10" id="bxl-p2-YmD"/>
+                            <constraint firstItem="voD-Qh-JkH" firstAttribute="width" secondItem="eDs-YL-wvZ" secondAttribute="width" multiplier="0.4" id="nyl-9a-zZY"/>
+                            <constraint firstItem="6Mn-Ya-ViP" firstAttribute="centerX" secondItem="voD-Qh-JkH" secondAttribute="centerX" id="pIq-vH-Ufs"/>
+                            <constraint firstItem="bdx-s2-QYc" firstAttribute="bottom" secondItem="AhH-Pj-EHT" secondAttribute="bottom" constant="-5" id="ubP-2w-ZIf"/>
+                            <constraint firstItem="AhH-Pj-EHT" firstAttribute="bottom" secondItem="voD-Qh-JkH" secondAttribute="top" multiplier="0.9" id="wfX-Lc-Jl1"/>
+                            <constraint firstItem="Rmi-nE-PIU" firstAttribute="leading" secondItem="eDs-YL-wvZ" secondAttribute="leading" id="xr4-HX-4CV"/>
+                            <constraint firstItem="6Mn-Ya-ViP" firstAttribute="width" secondItem="voD-Qh-JkH" secondAttribute="width" multiplier="0.9" id="yo5-Rh-Ryz"/>
+                            <constraint firstAttribute="bottom" secondItem="Rmi-nE-PIU" secondAttribute="bottom" id="yuY-pJ-S3I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="InternButtonPresed" destination="voD-Qh-JkH" id="PSI-gy-c1w"/>
+                        <outlet property="masterScoreLabel" destination="AhH-Pj-EHT" id="ehu-Pm-eLC"/>
+                        <outlet property="suffixLabel" destination="Us3-2m-IYt" id="jZ1-LE-s3d"/>
+                        <outlet property="tapHereToStartEarning" destination="6Mn-Ya-ViP" id="U25-eh-Er2"/>
+                        <outlet property="viewSlot1" destination="hbi-e7-0rT" id="3jP-ZO-qnw"/>
+                        <outlet property="viewSlot2" destination="ZEz-pj-6d9" id="G14-q1-ogn"/>
+                        <outlet property="viewSlot3" destination="YwF-da-dko" id="ABz-ig-asK"/>
+                        <outlet property="viewSlot4" destination="lSf-Gb-dXf" id="gg8-hu-dlY"/>
+                        <outlet property="viewSlot5" destination="gF4-zC-be5" id="fIG-Uu-Dxf"/>
+                        <outlet property="viewSlot6" destination="Gdm-he-Jem" id="8DP-bs-J1i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAs-1m-UC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intern" width="1600" height="1098"/>
+        <image name="silliconValleyBackground" width="2533" height="1424"/>
+    </resources>
+</document>
