@@ -14,14 +14,14 @@ enum calculateByCost: Int {
 
 struct ItemToBuy {
     let name: String
-    var incomeValue: Int
+    var incomeValue: Double
     var incomeTime: Float                   //remove
     var price: Double
     var priceNumberValue: Double            //remove
     var priceSuffix: String
-    let incomeIncrement: Int
+    var incomeIncrement: Double
     var count: Int
-    let initialPrice: Int
+    let initialPrice: Double
     var costIdentifier: calculateByCost!    //remove
     
     

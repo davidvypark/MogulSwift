@@ -14,11 +14,13 @@ func ^^ (radix: Double, power: Double) -> Double {
     return pow(Double(radix), Double(power))
 }
 
+
+
 class ItemView: UIView {
     
     @IBOutlet var contentView: ItemView!
     @IBOutlet weak var view: UIView!
-    @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var buyButton: ShadowButton!
     @IBOutlet weak var itemNameText: UITextView!
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemCountLabel: UILabel!
@@ -28,7 +30,9 @@ class ItemView: UIView {
 
     var itemToInsert: ItemToBuy! {
         didSet {
+            
             itemNameText.text = itemToInsert.name
+            itemImage.image = UIImage.init(named: itemToInsert.name)
             itemCountLabel.text = String(itemToInsert.count)
             if (itemToInsert.priceSuffix == "") {
                 itemCostLabel.text = NSString(format: "%.2f", (itemToInsert.price)) as String
@@ -63,23 +67,39 @@ class ItemView: UIView {
         priceSuffixLabel.adjustsFontSizeToFitWidth = true
         dollarSignStaticLabel.adjustsFontSizeToFitWidth = true
         
+        itemNameText.layer.shadowOpacity = 1.0
+        itemNameText.layer.shadowRadius = 0.0
+        itemNameText.layer.shadowColor = UIColor.blackColor().CGColor
+        itemNameText.layer.shadowOffset = CGSizeMake(1.0, 1.0)
         
-    
+        buyButton.layer.shadowOpacity = 0.4
+        buyButton.layer.shadowRadius = 0.0
+        buyButton.layer.shadowColor = UIColor.blackColor().CGColor
+        buyButton.layer.shadowOffset = CGSizeMake(5.0, 5.0)
+        
+        itemImage.layer.borderWidth = 2
+        itemImage.layer.borderColor = UIColor.peterRiverColor().CGColor
+        
+        
     }
     
     @IBAction func buyButtonPressed(sender: UIButton) {
         
         itemToInsert.count += 1
+        masterScore -= itemToInsert.price
+        
         itemToInsert.incomeValue += itemToInsert.incomeIncrement
-        itemToInsert.price = itemToInsert.price * 1.135
+        itemToInsert.price = itemToInsert.price * 1.14
         
         if (itemToInsert.priceSuffix == "") {
             if (itemToInsert.price >= 1000000) {
-                itemToInsert.price = itemToInsert.price / 1000000
+                
+                itemToInsert.price /= 1000000
                 itemToInsert.priceSuffix = changeToNextBrevSuffix(itemToInsert)
             }
         } else {
             if (itemToInsert.price >= 1000) {
+                
                 itemToInsert.price = itemToInsert.price / 1000
                 itemToInsert.priceSuffix = changeToNextBrevSuffix(itemToInsert)
             }

@@ -19,7 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silliconValleyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-nE-PIU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBackground" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-aw-ifd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silliconValleyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-nE-PIU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nne-Oo-eco">
@@ -56,30 +59,36 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voD-Qh-JkH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voD-Qh-JkH" customClass="ShadowButton" customModule="Mogul" customModuleProvider="target">
                                 <rect key="frame" x="180" y="90" width="240" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="voD-Qh-JkH" secondAttribute="height" multiplier="165:110" id="Mch-1K-fkK"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="intern"/>
+                                <state key="normal" title="Button" image="intern">
+                                    <color key="titleShadowColor" red="0.5318509615" green="0.5318509615" blue="0.5318509615" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="internButtonPressed:" destination="HBF-ND-CIe" eventType="touchUpInside" id="tZ5-HC-oaE"/>
+                                    <action selector="internButtonPressed:" destination="HBF-ND-CIe" eventType="touchUpInside" id="DgA-LJ-8ft"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhH-Pj-EHT">
-                                <rect key="frame" x="219" y="25" width="162.5" height="55.5"/>
-                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhH-Pj-EHT">
+                                <rect key="frame" x="219" y="25" width="163" height="56"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="44"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.69372306034482756" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Million" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us3-2m-IYt">
                                 <rect key="frame" x="387" y="52" width="66" height="19"/>
-                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-s2-QYc">
-                                <rect key="frame" x="194" y="31" width="20" height="44.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-s2-QYc">
+                                <rect key="frame" x="194" y="31" width="20" height="45"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -90,22 +99,36 @@
                                 <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H93-Gn-Fvu">
+                                <rect key="frame" x="20" y="20" width="70" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="testResetButton:" destination="HBF-ND-CIe" eventType="touchUpInside" id="rdH-xp-f4X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Nne-Oo-eco" firstAttribute="width" secondItem="eDs-YL-wvZ" secondAttribute="width" id="1uK-Uu-KUY"/>
                             <constraint firstItem="voD-Qh-JkH" firstAttribute="centerX" secondItem="eDs-YL-wvZ" secondAttribute="centerX" id="2Hh-Cu-Sc7"/>
+                            <constraint firstItem="JMu-aw-ifd" firstAttribute="centerX" secondItem="eDs-YL-wvZ" secondAttribute="centerX" id="A8w-fU-Tbm"/>
                             <constraint firstItem="Rmi-nE-PIU" firstAttribute="height" secondItem="eDs-YL-wvZ" secondAttribute="height" id="ATm-5f-0eO"/>
                             <constraint firstItem="voD-Qh-JkH" firstAttribute="top" secondItem="eDs-YL-wvZ" secondAttribute="centerY" multiplier="0.3" id="BbV-JB-WEL"/>
                             <constraint firstItem="bdx-s2-QYc" firstAttribute="trailing" secondItem="AhH-Pj-EHT" secondAttribute="leading" constant="-5" id="CIB-oV-Au8"/>
                             <constraint firstItem="Rmi-nE-PIU" firstAttribute="width" secondItem="eDs-YL-wvZ" secondAttribute="width" id="Cuj-hm-hb6"/>
                             <constraint firstItem="AhH-Pj-EHT" firstAttribute="centerX" secondItem="Rmi-nE-PIU" secondAttribute="centerX" id="Goq-tj-S1l"/>
                             <constraint firstItem="6Mn-Ya-ViP" firstAttribute="bottom" secondItem="voD-Qh-JkH" secondAttribute="bottom" multiplier="0.97" id="MPb-AJ-mWL"/>
+                            <constraint firstItem="JMu-aw-ifd" firstAttribute="centerY" secondItem="eDs-YL-wvZ" secondAttribute="centerY" id="MXI-9i-n6t"/>
                             <constraint firstAttribute="bottom" secondItem="Nne-Oo-eco" secondAttribute="bottom" multiplier="1.05" id="PLN-9H-Cka"/>
                             <constraint firstItem="Nne-Oo-eco" firstAttribute="centerX" secondItem="eDs-YL-wvZ" secondAttribute="centerX" id="SGs-z4-cFk"/>
+                            <constraint firstItem="JMu-aw-ifd" firstAttribute="height" secondItem="eDs-YL-wvZ" secondAttribute="height" id="Vz7-Hc-CId"/>
                             <constraint firstItem="Nne-Oo-eco" firstAttribute="height" secondItem="eDs-YL-wvZ" secondAttribute="height" multiplier="0.6" id="YgX-GL-PJy"/>
                             <constraint firstItem="Us3-2m-IYt" firstAttribute="leading" secondItem="AhH-Pj-EHT" secondAttribute="trailing" constant="5" id="aIy-vW-tAg"/>
                             <constraint firstItem="Us3-2m-IYt" firstAttribute="bottom" secondItem="AhH-Pj-EHT" secondAttribute="bottom" constant="-10" id="bxl-p2-YmD"/>
+                            <constraint firstItem="JMu-aw-ifd" firstAttribute="width" secondItem="eDs-YL-wvZ" secondAttribute="height" multiplier="1:1" id="nfL-xN-WsU"/>
                             <constraint firstItem="voD-Qh-JkH" firstAttribute="width" secondItem="eDs-YL-wvZ" secondAttribute="width" multiplier="0.4" id="nyl-9a-zZY"/>
                             <constraint firstItem="6Mn-Ya-ViP" firstAttribute="centerX" secondItem="voD-Qh-JkH" secondAttribute="centerX" id="pIq-vH-Ufs"/>
                             <constraint firstItem="bdx-s2-QYc" firstAttribute="bottom" secondItem="AhH-Pj-EHT" secondAttribute="bottom" constant="-5" id="ubP-2w-ZIf"/>
@@ -116,7 +139,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="InternButtonPresed" destination="voD-Qh-JkH" id="PSI-gy-c1w"/>
+                        <outlet property="internButton" destination="voD-Qh-JkH" id="jx3-AV-ddd"/>
                         <outlet property="masterScoreLabel" destination="AhH-Pj-EHT" id="ehu-Pm-eLC"/>
                         <outlet property="suffixLabel" destination="Us3-2m-IYt" id="jZ1-LE-s3d"/>
                         <outlet property="tapHereToStartEarning" destination="6Mn-Ya-ViP" id="U25-eh-Er2"/>
@@ -134,6 +157,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blueBackground" width="674" height="374"/>
         <image name="intern" width="1600" height="1098"/>
         <image name="silliconValleyBackground" width="2533" height="1424"/>
     </resources>

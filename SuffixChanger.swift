@@ -27,4 +27,13 @@ func changeToNextSuffix(currentSuffix:String) -> String {
     return suffixArray[currentIndex! + 1]
 }
 
+func changeToPrevBrevSuffix(item:ItemToBuy) -> String {
+    
+    return ""
+}
+
+func changeToPrevSuffix(currentSuffix:String) -> String {
+    
+    return ""
+}
 

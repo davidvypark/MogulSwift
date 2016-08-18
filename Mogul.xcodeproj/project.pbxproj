@@ -15,9 +15,12 @@
 		FFC43C431D26E547008B8288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC43C3C1D26E547008B8288 /* Main.storyboard */; };
 		FFC43C441D26E547008B8288 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC43C3D1D26E547008B8288 /* ViewController.swift */; };
 		FFC43C451D26EB57008B8288 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = FFC43C3A1D26E547008B8288 /* Info.plist */; };
-		FFC43C4B1D26FF3C008B8288 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC43C4A1D26FF3C008B8288 /* TestView.swift */; };
 		FFC43C4D1D26FF49008B8288 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC43C4C1D26FF49008B8288 /* ItemView.swift */; };
 		FFC43C4F1D2700B1008B8288 /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC43C4E1D2700B1008B8288 /* ItemView.xib */; };
+		FFD0C82A1D33EEAB000136D1 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0C8291D33EEAB000136D1 /* SimpleButton.swift */; };
+		FFD0C82F1D33F043000136D1 /* SimpleButtonStateChangeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0C82E1D33F043000136D1 /* SimpleButtonStateChangeValue.swift */; };
+		FFD0C8311D33F394000136D1 /* SimpleButtonClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0C8301D33F394000136D1 /* SimpleButtonClasses.swift */; };
+		FFD0C8331D33F429000136D1 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0C8321D33F429000136D1 /* UIColorExtensions.swift */; };
 		FFF29B4F1D2D477E00D8053C /* SuffixChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B4E1D2D477E00D8053C /* SuffixChanger.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +32,12 @@
 		FFC43C3B1D26E547008B8288 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Mogul/Item.swift; sourceTree = SOURCE_ROOT; };
 		FFC43C3C1D26E547008B8288 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Mogul/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		FFC43C3D1D26E547008B8288 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Mogul/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		FFC43C4A1D26FF3C008B8288 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = SOURCE_ROOT; };
 		FFC43C4C1D26FF49008B8288 /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = SOURCE_ROOT; };
 		FFC43C4E1D2700B1008B8288 /* ItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = SOURCE_ROOT; };
+		FFD0C8291D33EEAB000136D1 /* SimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = SOURCE_ROOT; };
+		FFD0C82E1D33F043000136D1 /* SimpleButtonStateChangeValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButtonStateChangeValue.swift; sourceTree = SOURCE_ROOT; };
+		FFD0C8301D33F394000136D1 /* SimpleButtonClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButtonClasses.swift; sourceTree = SOURCE_ROOT; };
+		FFD0C8321D33F429000136D1 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
 		FFF29B4E1D2D477E00D8053C /* SuffixChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixChanger.swift; sourceTree = SOURCE_ROOT; };
 		FFF2C3AB1D26DDD90014CA6C /* Mogul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mogul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,6 +53,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFD0C8241D33BE93000136D1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFC43C3C1D26E547008B8288 /* Main.storyboard */,
+				FFC43C4E1D2700B1008B8288 /* ItemView.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFD0C82B1D33F011000136D1 /* SimpleButton */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0C8291D33EEAB000136D1 /* SimpleButton.swift */,
+				FFD0C8301D33F394000136D1 /* SimpleButtonClasses.swift */,
+				FFD0C82E1D33F043000136D1 /* SimpleButtonStateChangeValue.swift */,
+			);
+			name = SimpleButton;
+			sourceTree = "<group>";
+		};
 		FFF29B4B1D2C050B00D8053C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,17 +99,17 @@
 		FFF2C3AD1D26DDDA0014CA6C /* Mogul */ = {
 			isa = PBXGroup;
 			children = (
-				FFC43C3C1D26E547008B8288 /* Main.storyboard */,
+				FFD0C8241D33BE93000136D1 /* Storyboards */,
 				FFC43C371D26E547008B8288 /* AppDelegate.swift */,
 				FFC43C3D1D26E547008B8288 /* ViewController.swift */,
 				FFC43C4C1D26FF49008B8288 /* ItemView.swift */,
-				FFC43C4E1D2700B1008B8288 /* ItemView.xib */,
 				FFF29B4E1D2D477E00D8053C /* SuffixChanger.swift */,
+				FFD0C8321D33F429000136D1 /* UIColorExtensions.swift */,
 				FFF29B4B1D2C050B00D8053C /* Models */,
+				FFD0C82B1D33F011000136D1 /* SimpleButton */,
 				FFC43C381D26E547008B8288 /* Assets.xcassets */,
 				FFC43C3A1D26E547008B8288 /* Info.plist */,
 				FFC43C391D26E547008B8288 /* Base.lproj */,
-				FFC43C4A1D26FF3C008B8288 /* TestView.swift */,
 			);
 			name = Mogul;
 			path = test;
@@ -164,13 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC43C4B1D26FF3C008B8288 /* TestView.swift in Sources */,
 				FFC43C451D26EB57008B8288 /* Info.plist in Sources */,
 				FFC43C441D26E547008B8288 /* ViewController.swift in Sources */,
 				FFC43C421D26E547008B8288 /* Item.swift in Sources */,
+				FFD0C8311D33F394000136D1 /* SimpleButtonClasses.swift in Sources */,
+				FFD0C82A1D33EEAB000136D1 /* SimpleButton.swift in Sources */,
 				FFC43C3E1D26E547008B8288 /* AppDelegate.swift in Sources */,
 				FFF29B4F1D2D477E00D8053C /* SuffixChanger.swift in Sources */,
+				FFD0C82F1D33F043000136D1 /* SimpleButtonStateChangeValue.swift in Sources */,
 				FFC43C4D1D26FF49008B8288 /* ItemView.swift in Sources */,
+				FFD0C8331D33F429000136D1 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
